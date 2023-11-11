@@ -18,4 +18,8 @@ func main() {
 	intValue, isGreater := exercises.GreaterThan100("999")
 	fmt.Println("The int value is: ", intValue)
 	fmt.Println(isGreater)
+
+	// Error
+	fmt.Println(exercises.GreaterThan100("fffffff"))
+
 }
