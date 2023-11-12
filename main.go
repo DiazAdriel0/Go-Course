@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/diazadriel0/go-course/exercises"
+	"github.com/diazadriel0/go-course/files"
 	"github.com/diazadriel0/go-course/io"
 	"github.com/diazadriel0/go-course/iterations"
 	"github.com/diazadriel0/go-course/variables"
@@ -34,5 +35,15 @@ func main() {
 	iterations.Iterator()
 
 	// Exercise 02
-	exercises.MultiplicationTable()
+	fmt.Println(exercises.MultiplicationTable())
+
+	// Files managment
+	/* files.SaveTable()
+	// for i := 3; i <= 10; i++{
+		files.SumTable()
+	// } */
+
+	// Read file
+	files.ReadFile()
+	files.ReadLines()
 }
