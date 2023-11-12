@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	arraysslices "github.com/diazadriel0/go-course/arrays-slices"
+	defPanRec "github.com/diazadriel0/go-course/defer-panic-recover"
 	"github.com/diazadriel0/go-course/exercises"
 	"github.com/diazadriel0/go-course/files"
 	"github.com/diazadriel0/go-course/functions"
@@ -81,4 +82,8 @@ func main() {
 	exercises.HumansBreathing(adri)
 	juli := new(models.Woman)
 	exercises.HumansBreathing(juli)
+
+	// Defer, panic and recover
+	defPanRec.Defer()
+	defPanRec.PanicExample()
 }
