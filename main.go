@@ -5,6 +5,7 @@ import (
 
 	"github.com/diazadriel0/go-course/exercises"
 	"github.com/diazadriel0/go-course/files"
+	"github.com/diazadriel0/go-course/functions"
 	"github.com/diazadriel0/go-course/io"
 	"github.com/diazadriel0/go-course/iterations"
 	"github.com/diazadriel0/go-course/variables"
@@ -46,4 +47,11 @@ func main() {
 	// Read file
 	files.ReadFile()
 	files.ReadLines()
+
+	// Anonymous func
+	functions.Calc()
+
+	// Closure func
+	functions.ClosureCall(2)
+	functions.ClosureCall(3)
 }
