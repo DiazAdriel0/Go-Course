@@ -54,4 +54,8 @@ func main() {
 	// Closure func
 	functions.ClosureCall(2)
 	functions.ClosureCall(3)
+
+	// Recursion
+	functions.Exponential(2)
+	functions.Exponential(3)
 }
