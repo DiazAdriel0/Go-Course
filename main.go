@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 
+	arraysslices "github.com/diazadriel0/go-course/arrays-slices"
 	"github.com/diazadriel0/go-course/exercises"
 	"github.com/diazadriel0/go-course/files"
 	"github.com/diazadriel0/go-course/functions"
@@ -58,4 +59,11 @@ func main() {
 	// Recursion
 	functions.Exponential(2)
 	functions.Exponential(3)
+
+	// Arrays
+	arraysslices.ShowArrays()
+
+	// Slices
+	arraysslices.ShowSlice()
+	arraysslices.Capacity()
 }
