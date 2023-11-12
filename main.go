@@ -89,10 +89,13 @@ func main() {
 	// defPanRec.PanicExample()
 
 	// Routines (async)
-	go goRoutines.SlowPrint("This is a routine")
-
-	fmt.Println("Write something and press enter to finishing the run")
-	var x string
-	fmt.Scanln(&x)
+	channel1 := make(chan bool)
+	go goRoutines.SlowPrint("This is a routine", channel1)
+	fmt.Println("Init routine")
+	defer func() {
+		<- channel1
+		fmt.Println("Finish routine")
+	}()
 	
+
 }

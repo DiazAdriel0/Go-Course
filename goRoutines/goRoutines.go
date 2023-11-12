@@ -6,10 +6,12 @@ import (
 	"time"
 )
 
-func SlowPrint(str string) {
+func SlowPrint(str string, channel1 chan bool) {
 	split := strings.Split(str, "")
 	for _, char := range split {
-		time.Sleep(1000 * time.Millisecond)
+		time.Sleep(300 * time.Millisecond)
 		fmt.Println(char)
 	}
+
+	channel1 <- true
 }
