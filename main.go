@@ -15,6 +15,7 @@ import (
 	"github.com/diazadriel0/go-course/models"
 	"github.com/diazadriel0/go-course/users"
 	"github.com/diazadriel0/go-course/variables"
+	webserver "github.com/diazadriel0/go-course/webServer"
 )
 
 func main() {
@@ -97,5 +98,6 @@ func main() {
 		fmt.Println("Finish routine")
 	}()
 	
-
+	// Web Server
+	webserver.MyWebServer()
 }
