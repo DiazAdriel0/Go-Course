@@ -10,6 +10,7 @@ import (
 	"github.com/diazadriel0/go-course/io"
 	"github.com/diazadriel0/go-course/iterations"
 	"github.com/diazadriel0/go-course/maps"
+	"github.com/diazadriel0/go-course/models"
 	"github.com/diazadriel0/go-course/users"
 	"github.com/diazadriel0/go-course/variables"
 )
@@ -74,4 +75,10 @@ func main() {
 
 	// Structures
 	users.RegisterUser()
+
+	// Interfaces
+	adri := new(models.Man)
+	exercises.HumansBreathing(adri)
+	juli := new(models.Woman)
+	exercises.HumansBreathing(juli)
 }
