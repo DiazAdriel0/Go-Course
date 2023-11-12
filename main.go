@@ -9,6 +9,7 @@ import (
 	"github.com/diazadriel0/go-course/functions"
 	"github.com/diazadriel0/go-course/io"
 	"github.com/diazadriel0/go-course/iterations"
+	"github.com/diazadriel0/go-course/maps"
 	"github.com/diazadriel0/go-course/variables"
 )
 
@@ -66,4 +67,7 @@ func main() {
 	// Slices
 	arraysslices.ShowSlice()
 	arraysslices.Capacity()
+
+	// Maps
+	maps.ShowMaps()
 }
