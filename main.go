@@ -8,6 +8,7 @@ import (
 	"github.com/diazadriel0/go-course/exercises"
 	"github.com/diazadriel0/go-course/files"
 	"github.com/diazadriel0/go-course/functions"
+	"github.com/diazadriel0/go-course/goRoutines"
 	"github.com/diazadriel0/go-course/io"
 	"github.com/diazadriel0/go-course/iterations"
 	"github.com/diazadriel0/go-course/maps"
@@ -85,5 +86,13 @@ func main() {
 
 	// Defer, panic and recover
 	defPanRec.Defer()
-	defPanRec.PanicExample()
+	// defPanRec.PanicExample()
+
+	// Routines (async)
+	go goRoutines.SlowPrint("This is a routine")
+
+	fmt.Println("Write something and press enter to finishing the run")
+	var x string
+	fmt.Scanln(&x)
+	
 }
